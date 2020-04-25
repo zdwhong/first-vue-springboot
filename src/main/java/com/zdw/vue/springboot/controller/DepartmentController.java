@@ -19,8 +19,6 @@ public class DepartmentController {
     @GetMapping("getListByPage/{page}/{size}")
     public Page<Department> getListByPage(@PathVariable("page") int page, @PathVariable("size") int size){
         Page<Department> listByPage = departmentService.getListByPage(page, size);
-        //这里页加上一行
-        //woyejiashangyihang
         return listByPage;
     }
 }
