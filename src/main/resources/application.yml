@@ -1,0 +1,20 @@
+server:
+  port: 8099
+spring:
+  application:
+    name: first-vue-springboot
+  datasource:
+    url: jdbc:mysql://localhost:3306/vue?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123
+
+  jpa:
+    show-sql: true  #true 控制台打印sql语句
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+        # 格式化sql语句
+        format_sql: true
